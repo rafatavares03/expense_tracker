@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Josefin sans', sans-serif;
+    background-color: #198DE3;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    background-color: #1A5CED;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+}
+
+.container {
+    height: calc(100vh - 100px);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input {
+    background: transparent;
+    outline: 0;
+    border: solid 2px #fff;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.container form input[type="number"] {
+    margin-bottom: 40px;
+}
+
+.container form input[type="number"]::placeholder {
+    color: #000;
+}
+
+.container form input[type="number"]::-webkit-inner-spin-button,
+.container form input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+#submitButton {
+    color: #1A5CED;
+    background-color: #fff;
+    border: solid 2px #1A5CED;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.container table {
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #480BDE;
+    color: #fff;
+}
+
+.container table th {
+    border-bottom: solid 2px #0D86FA;
+    width: 80px;
+}
+
+.container table th,
+.container table td {
+    width: 50px;
+    padding: 10px;
+}
+
+.container table td {
+    position: relative;
+    text-align: center;
+}
+
+.button {
+    top: 10px;
+    outline: 0;
+    background-color: #fff;
+    color: #480BDE;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
